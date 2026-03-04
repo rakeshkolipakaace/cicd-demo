@@ -52,7 +52,7 @@ pipeline {
                     sh """
                         docker rm -f ${CONTAINER_NAME} || true
                         docker run -d \
-                          -p 8080:8080 \
+                          -p 3000:3000 \
                           --name ${CONTAINER_NAME} \
                           ${IMAGE_NAME}:${IMAGE_TAG}
                     """
