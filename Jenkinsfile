@@ -63,7 +63,7 @@ pipeline {
 
     post {
         success {
-            echo "Application deployed successfully 🚀"
+            echo "Application deployed successfully from branch 1🚀"
         }
         failure {
             echo "Build failed ❌"
